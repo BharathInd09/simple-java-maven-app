@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Start') {
             steps {
-                echo 'Starting the Maven Build!'
+                echo 'Starting the Maven Build to fix a bug!'
             }
         }
         stage('Build') {
