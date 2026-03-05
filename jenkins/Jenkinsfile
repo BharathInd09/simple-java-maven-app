@@ -4,7 +4,6 @@ pipeline {
         skipStagesAfterUnstable()
     }
     stages {
-        stages {
         stage('Start') {
             steps {
                 echo 'Starting the Maven Build!'
@@ -28,8 +27,7 @@ pipeline {
         stage('Deliver') { 
             steps {
                 sh './jenkins/scripts/deliver.sh' 
-                }
-            }   
+            }
         }
     }
 }
